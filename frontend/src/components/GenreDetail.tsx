@@ -6,7 +6,8 @@ export default function GenreDetail() {
     const [genre, setGenre] = useState<any>(null);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/genres/${id}`)
+        //fetch(`http://localhost:8000/genres/${id}`)
+        fetch(`${import.meta.env.VITE_API_URL}genres/${id}`)
             .then(res => res.json())
             .then(setGenre);
     }, [id]);

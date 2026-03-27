@@ -5,7 +5,9 @@ export default function ActorList() {
     const [actors, setActors] = useState<any[]>([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/actors")
+      //  fetch("http://localhost:8000/actors")
+        fetch(`${import.meta.env.VITE_API_URL}actors`)
+
             .then(res => res.json())
             .then(setActors);
     }, []);

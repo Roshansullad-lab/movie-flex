@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
      const [movies, setMovies] = useState<any[]>([]);
 
      useEffect(() => {
-         fetch("http://localhost:8000/movies")
+         //fetch("http://localhost:8000/movies")
+         fetch(`${import.meta.env.VITE_API_URL}movies`)
              .then(res => res.json())
              .then(setMovies);
      }, []);

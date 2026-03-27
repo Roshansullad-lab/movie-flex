@@ -5,7 +5,8 @@ export default function DirectorList() {
     const [directors, setDirectors] = useState<any[]>([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/directors")
+        //fetch("http://localhost:8000/directors")
+        fetch(`${import.meta.env.VITE_API_URL}directors`)
             .then(res => res.json())
             .then(setDirectors);
     }, []);

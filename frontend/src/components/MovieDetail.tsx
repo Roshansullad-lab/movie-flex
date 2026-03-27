@@ -7,7 +7,8 @@ export default function MovieDetail() {
     const [movie, setMovie] = useState<any>(null);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/movies/${id}`)
+       // fetch(`http://localhost:8000/movies/${id}`)
+        fetch(`${import.meta.env.VITE_API_URL}movies/${id}`)
             .then(res => res.json())
             .then(setMovie);
     }, [id]);

@@ -7,7 +7,8 @@ export default function DirectorDetail() {
     const [director, setDirector] = useState<any>(null);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/directors/${id}`)
+        //fetch(`http://localhost:8000/directors/${id}`)
+        fetch(`${import.meta.env.VITE_API_URL}directors/${id}`)
             .then(res => res.json())
             .then(setDirector);
     }, [id]);

@@ -7,7 +7,8 @@ export default function ActorDetail() {
     const [actor, setActor] = useState<any>(null);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/actors/${id}`)
+        //fetch(`http://localhost:8000/actors/${id}`)
+        fetch(`${import.meta.env.VITE_API_URL}actors/${id}`)
             .then(res => res.json())
             .then(setActor);
     }, [id]);

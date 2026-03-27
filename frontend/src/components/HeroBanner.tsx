@@ -5,7 +5,8 @@ export default function HeroBanner() {
 
     useEffect(() => {
         // Fetch a featured movie (could be random or marked in DB)
-        fetch("http://localhost:8000/movies/featured")
+       // fetch("http://localhost:8000/movies/featured")
+        fetch(`${import.meta.env.VITE_API_URL}movies/featured`)
             .then(res => res.json())
             .then(setFeatured);
     }, []);
