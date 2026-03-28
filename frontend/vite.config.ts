@@ -11,6 +11,9 @@ export default defineConfig({
     build: {
         outDir: 'dist', // Vercel expects dist folder
     },
+    "routes": [
+        { "src": "/(.*)", "dest": "/index.html" }
+    ],
     base: '/', // ensures assets resolve correctly
 })
 // https://vitejs.dev/config/
