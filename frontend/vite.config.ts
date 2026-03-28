@@ -14,6 +14,7 @@ export default defineConfig({
     "routes": [
         { "src": "/(.*)", "dest": "/index.html" }
     ],
+
     base: '/', // ensures assets resolve correctly
 })
 // https://vitejs.dev/config/
