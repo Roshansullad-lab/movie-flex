@@ -17,7 +17,9 @@ export default function HeroBanner() {
         <div className="hero-banner">
             <video
                 className="hero-video"
-                src={featured.trailer_url}
+            //src={featured.trailer_url}
+                src={"/pics/prv1.mp4"}
+                
                 autoPlay
                 muted
                 loop
