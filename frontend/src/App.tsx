@@ -6,7 +6,7 @@ import ActorList from "./components/ActorList";
 import DirectorList from "./components/DirectorList";
 import GenreList from "./components/GenreList";
 import Navbar from "./components/Navbar";
-import Searchbar from "./components/Searchbar";
+import Searchbar from "./components/SearchBar";
 import ActorDetail from "./components/ActorDetail"
 import DirectorDetail from "./components/DirectorDetails";
 import GenreDetail from "./components/GenreDetail";
